@@ -34,9 +34,9 @@ int main(int argc, char *argv[])
 
   PID pid;
   // TODO: Initialize the pid variable
-  double Kp = atof(argv[1]);
-  double Ki = atof(argv[2]);
-  double Kd = atof(argv[3]);
+  double Kp = -0.2;
+  double Ki = 0.0;
+  double Kd = -3.0;
 
   pid.Init(Kp, Ki, Kd);
 

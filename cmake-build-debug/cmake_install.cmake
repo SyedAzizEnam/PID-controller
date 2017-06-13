@@ -1,4 +1,4 @@
-# Install script for directory: /Users/aziz/Documents/Nanodegree/Self-Driving/Term 2/CarND-PID-Control-Project
+# Install script for directory: /Users/aziz/Documents/Nanodegree/Self-Driving/Term 2/CarND-P4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/aziz/Documents/Nanodegree/Self-Driving/Term 2/CarND-PID-Control-Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/aziz/Documents/Nanodegree/Self-Driving/Term 2/CarND-P4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
