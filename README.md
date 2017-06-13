@@ -1,6 +1,26 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+# PID controller
+The PID in this controller stand for Proportional–Integral–Derivative. The steering angle at any given time is proportinal to the cross track error, along with the cross track error delta and sum over time. The update equations can be found in PID.cpp
+
+```
+void PID::UpdateError(double cte) {
+    d_error = cte - p_error;
+    i_error += cte;
+    p_error = cte;
+}
+
+double PID::TotalError() {
+
+    return Kp*p_error + Ki*i_error + Kd*d_error;
+}
+```
+
+# Coefficients
+
+The final coefficients of the model were Kp = -0.2, Ki = 0.0, Kd = -3.0. The integral term in PID controllers is used to eliminate bias i.e if our car's wheels tires lean to the left/right, since our simulation doesnt have such bias Ki was left at zero. The derivative term however was necessary to ensure a more gracefull turn while also eliminating oscillations around the trajectory. The values themselves were manually tuned through trial and error.
+
 ---
 
 ## Dependencies
